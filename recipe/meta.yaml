@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python
-    - selector2  # [py==27]
+    - selectors2  # [py==27]
 
 test:
   imports:
