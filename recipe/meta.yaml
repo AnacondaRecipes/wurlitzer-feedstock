@@ -18,6 +18,8 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
+    - wheel
   run:
     - python
     - selectors2  # [py==27]
@@ -25,6 +27,10 @@ requirements:
 test:
   imports:
     - wurlitzer
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/minrk/wurlitzer
@@ -32,6 +38,8 @@ about:
   license_family: MIT
   license_file: LICENSE
   summary: 'Capture C-level stdout/stderr in Python'
+  dev_url: https://github.com/minrk/wurlitzer
+  doc_url: https://github.com/minrk/wurlitzer/blob/main/README.md
 
 extra:
   recipe-maintainers:
